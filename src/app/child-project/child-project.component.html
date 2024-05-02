@@ -1,5 +1,5 @@
 <div (mouseenter)="hover = true" (mouseleave)="hover = false" class="container projects"  [ngStyle]="{'background-color': bgColor}" >
-    <h3>{{projectName}}</h3>
+    <h3 class="projectTitle">{{projectName}}</h3>
     <div class="notHover" *ngIf="!hover">
         <img  class="porjectImageLarge" src="{{screenL}}" />
         <div class='skillSet' *ngFor="let skill of skillSet">
@@ -14,7 +14,7 @@
             {{detail}}
         </p>
         <img  class="porjectImageLarge" src="{{screenS}}" />
-        <p>{{url}}</p>
+        <a href="{{url}}" target="_blank">{{url}}</a>
         
     </div>
     

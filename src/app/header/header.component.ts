@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HeaderButton } from '../types';
-import { headerButtonList } from '../headerButton';
+import { SharedDataService } from '../../shared-data.service';
 
 @Component({
   selector: 'app-header',
@@ -9,10 +8,13 @@ import { headerButtonList } from '../headerButton';
 })
 export class HeaderComponent {
   click: boolean[] = [false,false];
-  buttons:HeaderButton[]=[];
-  ngOnInit(){
-    this.buttons=headerButtonList;
+  constructor(private sharedDataService: SharedDataService) {}
+
+  setActiveArea(index: number, value: boolean): void {
+    this.sharedDataService.setActiveArea(index, value);
   }
+ 
+ 
   
 }
 

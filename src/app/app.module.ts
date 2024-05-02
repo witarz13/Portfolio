@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { ChildProjectComponent } from './child-project/child-project.component';
 import { FatherProjectComponent } from './father-project/father-project.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MainAreaComponent } from './main-area/main-area.component';
+import { UpperComponent } from './upper/upper.component';
+import { LowerComponent } from './lower/lower.component';
 
 
 @NgModule({
@@ -18,6 +21,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ChildProjectComponent,
     FatherProjectComponent,
     AboutMeComponent,
+    MainAreaComponent,
+    UpperComponent,
+    LowerComponent,
 
   ],
   imports: [

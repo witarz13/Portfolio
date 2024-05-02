@@ -1,14 +1,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container-fluid bg-dark d-flex  me-0">
-    <img class="small_icon" src="assets/logo.png"/>
+    <img class="small_icon" src="assets/logo.png" (click) ="setActiveArea(0,false); setActiveArea(1,false)"/>
     <H1 class="title">Welcome To Taostation</H1>
     <div class="d-flex ms-auto" (mouseleave)="click = [false,false]" >
             <div>
-                <button class="btn  btn-outline-light"  (click)="click[0]=true">About Me</button>
-                <div class="about_Me_Info" *ngIf="click[0]" (mouseleave)="click[0] = false" >
-                    <app-about-me/>
-
-                </div>
+                <button class="btn  btn-outline-light"  (click)="setActiveArea(0,true); setActiveArea(1,false)">My Projects</button>
+            </div>
+            <div>
+                <button class="btn  btn-outline-light"  (click)="setActiveArea(0,false); setActiveArea(1,true)">About Me</button>
             </div>
             <div >
                 <button class="btn  btn-outline-light"  (click)="click[1]=true">Contact</button>

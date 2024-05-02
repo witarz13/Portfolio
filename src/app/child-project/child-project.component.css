@@ -10,6 +10,9 @@
 .projects{
   transition: transform 0.3s ease;
 }
+.projectTitle{
+  text-align: center;
+}
 
 .projects:hover{
   position: fixed;

@@ -1,0 +1,14 @@
+.display-1{
+    position: relative;
+
+    text-align:end;
+    right: 50%; 
+    font-weight: bold;
+   
+    
+} 
+.rainbow-text {
+    background: linear-gradient(to right,#ff8670, #e03738,  #fd0224,#8e1413,#2c2b2b );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

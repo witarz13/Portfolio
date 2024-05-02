@@ -1,6 +1,6 @@
 <div class="container " >
     <div class="row" >
-        <h1>My Projects:</h1>
+        <h1 class="title">My Projects:</h1>
         <div class=" item_container col-4" *ngFor="let Project of projects">
            <app-child-project [projectName]="Project.projectName" [bgColor]="Project.bgColor"
            [screenL]="Project.screenL" [detail]="Project.detail" [screenS]="Project.screenS" [skillSet]="Project.skillSet"

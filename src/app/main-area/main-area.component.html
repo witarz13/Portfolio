@@ -1,0 +1,6 @@
+<div class="container">
+<app-upper class="upperClip" *ngIf="!activeArea[0] && !activeArea[1]"/>
+<app-father-project *ngIf="activeArea[0]" />
+<app-about-me *ngIf="activeArea[1]" />
+<app-lower class="lowerClip" *ngIf="!activeArea[0] && !activeArea[1]" />
+</div>

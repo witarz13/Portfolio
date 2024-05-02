@@ -10,6 +10,6 @@ export class BannerComponent {
 
   reSet(): void {
     this.sharedDataService.reSet();
-    console.log(this.sharedDataService.getActiveArea());
+    
   }
 }
